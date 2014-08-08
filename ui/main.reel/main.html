@@ -13,11 +13,20 @@
                 "element": {"#": "main"}
             }
         },
+        "checkbox": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            }
+        },
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
                 "element": {"#": "list"},
                 "content": [
+                    "",
+                    "",
                     ""
                 ]
             }
@@ -26,6 +35,13 @@
             "prototype": "montage/ui/overlay.reel",
             "properties": {
                 "dismissOnExternalInteraction": false
+            }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "wibble"
             }
         },
         "title": {
@@ -44,7 +60,10 @@
 
         </h1>
         <ul data-montage-id="list">
-            <li></li>
+            <li>
+                <input type="checkbox" data-montage-id="checkbox">
+                <p data-montage-id="text"></p>
+            </li>
         </ul>
     </div>
 </body>
